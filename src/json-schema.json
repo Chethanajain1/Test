@@ -1,0 +1,464 @@
+{
+    "eventInfo": {
+        "title": "Life In Color India",
+        "goLiveDate": [
+            "3 Sep,",
+            "Monday Onwards"
+        ],
+        "groupedEventCodes": [],
+        "dynamicPrice": false,
+        "banner": {
+            "desktop": [
+                {
+                    "src": "https://in.bmscdn.com/nmcms/media-desktop-life-in-color-india-2018-10-16-t-12-23-41.jpeg",
+                    "name": "Life In Color India",
+                    "type": "image",
+                    "videoUrl": null,
+                    "href": ""
+                }
+            ],
+            "mobile": [
+                {
+                    "src": "https://in.bmscdn.com/nmcms/media-mobile-life-in-color-india-2018-10-16-t-12-23-47.jpeg",
+                    "name": "Life In Color India",
+                    "type": "image",
+                    "videoUrl": null,
+                    "href": ""
+                }
+            ],
+            "mobileListing": [
+                {
+                    "caption": "Life In Color India",
+                    "etCode": "ET00083081",
+                    "name": "ET00083081.jpg",
+                    "size": 38151,
+                    "thumbnail": "",
+                    "type": "image",
+                    "url": "https://in.bmscdn.com/nmcms/events/banner/mobilelisting/et00083081.jpg?20181023124609"
+                }
+            ],
+            "superstarListing": [
+                {
+                    "caption": "Life In Color India",
+                    "etCode": "ET00083081",
+                    "name": "webin/loyalty/events/et00083081.jpg",
+                    "size": 172651,
+                    "targetURL": "",
+                    "thumbnail": "",
+                    "type": "image",
+                    "url": "https://in.bmscdn.com/nmcms/webin/loyalty/events/et00083081.jpg?20180911113714"
+                }
+            ],
+            "venueListing": [
+                {
+                    "caption": "Life In Color India",
+                    "name": "events/banner/venuelisting/et00083081.jpg",
+                    "size": 37483,
+                    "targetURL": "",
+                    "thumbnail": "",
+                    "type": "image",
+                    "url": "https://in.bmscdn.com/nmcms/events/banner/venuelisting/et00083081.jpg?20181008170204"
+                }
+            ],
+            "verticalBanner": [],
+            "webListing": [
+                {
+                    "caption": "Life In Color India",
+                    "name": "events/banner/weblisting/et00083081.jpg",
+                    "size": 37017,
+                    "targetURL": "",
+                    "thumbnail": "",
+                    "type": "image",
+                    "url": "https://in.bmscdn.com/nmcms/events/banner/weblisting/et00083081.jpg?20181008170200"
+                }
+            ]
+        },
+        "regMetaConfig": {
+            "CorporateBooking": [
+                {
+                    "custom_field": {
+                        "formType": [
+                            "CorporateBooking"
+                        ]
+                    },
+                    "isMemberidMandatory": false,
+                    "loggedIn_user": false,
+                    "repeatForms": false,
+                    "optionalForm": false,
+                    "regStart": "2018-09-14T07:50:00Z",
+                    "regEnd": null
+                }
+            ]
+        },
+        "addons": {
+            "flows": []
+        },
+        "businessSettings": {
+            "bdID": "11",
+            "bdName": "Achyuth Nagubothu",
+            "merchantID": "BMSM000000215",
+            "organizerID": "O-122",
+            "vendorID": "O-122"
+        },
+        "contentCreatedDate": "2018-09-03T12:18:44.885Z",
+        "contentModifiedDate": "2018-10-23T07:16:09.957Z",
+        "id": "5b8d26a453f1e529e1f694cd",
+        "offers": {
+            "items": []
+        },
+        "registration": {
+            "flags": {
+                "isPresale": true,
+                "isTransactional": false
+            }
+        },
+        "status": "active",
+        "settings": {
+            "bouuid": "nmcms|d2986993-6a28-4ed4-8bc4-8159a6a23f54",
+            "category": "Music",
+            "code": "ET00083081",
+            "codes": [],
+            "duration": 420,
+            "eventStartDate": "2018-11-18T00:00:00Z",
+            "genre": [],
+            "golive": "2018-09-02T18:30:00Z",
+            "languages": [
+                "English"
+            ],
+            "presaleEnd": "2018-09-13T18:25:00Z",
+            "presaleStart": "2018-09-11T06:15:00Z",
+            "region": "NCR",
+            "regionDetails": [
+                {
+                    "regionCode": "PUNE",
+                    "regionName": "Pune",
+                    "stateCode": 1,
+                    "stateName": "Maharashtra",
+                    "subRegionCode": "PUNE-PUNE",
+                    "subRegionName": "Pune"
+                },
+                {
+                    "regionCode": "MUMBAI",
+                    "regionName": "Mumbai",
+                    "stateCode": 1,
+                    "stateName": "Maharashtra",
+                    "subRegionCode": "MUMBAI-KALYAN",
+                    "subRegionName": "Kalyan"
+                },
+                {
+                    "regionCode": "MUMBAI",
+                    "regionName": "Mumbai",
+                    "stateCode": 1,
+                    "stateName": "Maharashtra",
+                    "subRegionCode": "MUMBAI-MCENT",
+                    "subRegionName": "Mumbai: South & Central"
+                },
+                {
+                    "regionCode": "MUMBAI",
+                    "regionName": "Mumbai",
+                    "stateCode": 1,
+                    "stateName": "Maharashtra",
+                    "subRegionCode": "MUMBAI-MWEST",
+                    "subRegionName": "Mumbai: Western"
+                },
+                {
+                    "regionCode": "MUMBAI",
+                    "regionName": "Mumbai",
+                    "stateCode": 1,
+                    "stateName": "Maharashtra",
+                    "subRegionCode": "MUMBAI-THAN",
+                    "subRegionName": "Navi Mumbai"
+                },
+                {
+                    "regionCode": "MUMBAI",
+                    "regionName": "Mumbai",
+                    "stateCode": 1,
+                    "stateName": "Maharashtra",
+                    "subRegionCode": "MUMBAI-ULHA",
+                    "subRegionName": "Ulhasnagar"
+                },
+                {
+                    "regionCode": "BANG",
+                    "regionName": "Bengaluru",
+                    "stateCode": 14,
+                    "stateName": "Karnataka",
+                    "subRegionCode": "BANG-BANG",
+                    "subRegionName": "Bengaluru"
+                },
+                {
+                    "regionCode": "HYD",
+                    "regionName": "Hyderabad",
+                    "stateCode": 1000032,
+                    "stateName": "Telangana",
+                    "subRegionCode": "HYD-HYD",
+                    "subRegionName": "Hyderabad"
+                },
+                {
+                    "regionCode": "HYD",
+                    "regionName": "Hyderabad",
+                    "stateCode": 1000032,
+                    "stateName": "Telangana",
+                    "subRegionCode": "HYD-SURM",
+                    "subRegionName": "Suraram"
+                }
+            ],
+            "subCategory": "Electronic & Dance",
+            "type": "event",
+            "url": "https://in.bookmyshow.com/events/life-in-color-india/ET00083081"
+        },
+        "cityKey": "National Capital Region (NCR)",
+        "venueKey": "JNSD",
+        "dateKey": "multiple",
+        "timeKey": "1500",
+        "actualVenueKey": "JNSD",
+        "availableFlows": [
+            "datetime",
+            "tickets"
+        ],
+        "eventCode": "ET00083081",
+        "metaFromDE": {
+            "title": "Life In Color India",
+            "imageCode": "ET00083081",
+            "eventType": "CT",
+            "genre": [
+                "Music"
+            ],
+            "language": "English",
+            "length": "7 hrs ",
+            "fshareUrl": "https://in.bookmyshow.com/events/life-in-color-india/ET00083081",
+            "releaseDate": "20181118",
+            "BannerURL": "//in.bmscdn.com/Events/Mobile/ET00083081.jpg?201810260508",
+            "webRedirectUrl": "https://in.bookmyshow.com/events/life-in-color-india/ET00083081",
+            "eventifierID": ""
+        },
+        "time": {
+            "start": {
+                "date": "20181118",
+                "time": "1500"
+            },
+            "end": {
+                "date": ""
+            }
+        },
+        "price": {
+            "minPrice": 1500,
+            "maxPrice": 3000
+        }
+    },
+    "eventCards": {
+        "JNSD": {
+            "20181118": {
+                "1500": {
+                    "ET00083081-10116-T472": {
+                        "VenueCode": "JNSD",
+                        "SessionID": "10116",
+                        "EventCode": "ET00083081",
+                        "ShowDateDisplay": "Sunday, 18 Nov",
+                        "ShowTime": "03:00 PM",
+                        "cutOffTime": 201811181400,
+                        "VenueName": "Jawaharlal Nehru Stadium: Delhi",
+                        "CinemaIsSVG": "NONSVG",
+                        "IsSVG": "N",
+                        "location": "National Capital Region (NCR)",
+                        "dtmTime": "18-11-2018 15:00:00",
+                        "VenueMax": "10",
+                        "VenueAddress": "Gate No. 2, Open Arena, Near Lodi Colony, Pragati Vihar, Bhishma Pitamah Marg, Delhi, NCR 110003, India",
+                        "PriceCode": "T472",
+                        "PriceDesc": "Phase 1 VIP",
+                        "Price": "3000.00",
+                        "SeatsAvail": "Y",
+                        "MaxTickets": 10,
+                        "SpecialCode": "",
+                        "AreaCatCode": "AC00000371",
+                        "SeatLayout": "N",
+                        "AdditionalPrice": "Rs. 3000.00",
+                        "AvailableSeats": "190",
+                        "TotalSeats": "300",
+                        "CategorySalesChannel": "|M5|MOBILE|OUTLET|POS|TP|WEB|",
+                        "PriceDescEX": "",
+                        "DynamicPrice": false
+                    },
+                    "ET00083081-10116-T470": {
+                        "VenueCode": "JNSD",
+                        "SessionID": "10116",
+                        "EventCode": "ET00083081",
+                        "ShowDateDisplay": "Sunday, 18 Nov",
+                        "ShowTime": "03:00 PM",
+                        "cutOffTime": 201811181400,
+                        "VenueName": "Jawaharlal Nehru Stadium: Delhi",
+                        "CinemaIsSVG": "NONSVG",
+                        "IsSVG": "N",
+                        "location": "National Capital Region (NCR)",
+                        "dtmTime": "18-11-2018 15:00:00",
+                        "VenueMax": "10",
+                        "VenueAddress": "Gate No. 2, Open Arena, Near Lodi Colony, Pragati Vihar, Bhishma Pitamah Marg, Delhi, NCR 110003, India",
+                        "PriceCode": "T470",
+                        "PriceDesc": "Early Bird VIP",
+                        "Price": "2500.00",
+                        "SeatsAvail": "N",
+                        "MaxTickets": 0,
+                        "SpecialCode": "",
+                        "AreaCatCode": "AC00000369",
+                        "SeatLayout": "N",
+                        "AdditionalPrice": "Rs. 2500.00",
+                        "AvailableSeats": "0",
+                        "TotalSeats": "159",
+                        "CategorySalesChannel": "|M5|MOBILE|OUTLET|POS|TP|WEB|",
+                        "PriceDescEX": "",
+                        "DynamicPrice": false
+                    },
+                    "ET00083081-10116-T471": {
+                        "VenueCode": "JNSD",
+                        "SessionID": "10116",
+                        "EventCode": "ET00083081",
+                        "ShowDateDisplay": "Sunday, 18 Nov",
+                        "ShowTime": "03:00 PM",
+                        "cutOffTime": 201811181400,
+                        "VenueName": "Jawaharlal Nehru Stadium: Delhi",
+                        "CinemaIsSVG": "NONSVG",
+                        "IsSVG": "N",
+                        "location": "National Capital Region (NCR)",
+                        "dtmTime": "18-11-2018 15:00:00",
+                        "VenueMax": "10",
+                        "VenueAddress": "Gate No. 2, Open Arena, Near Lodi Colony, Pragati Vihar, Bhishma Pitamah Marg, Delhi, NCR 110003, India",
+                        "PriceCode": "T471",
+                        "PriceDesc": "Phase 1 GA",
+                        "Price": "2000.00",
+                        "SeatsAvail": "Y",
+                        "MaxTickets": 10,
+                        "SpecialCode": "",
+                        "AreaCatCode": "AC00000370",
+                        "SeatLayout": "N",
+                        "AdditionalPrice": "Rs. 2000.00",
+                        "AvailableSeats": "1261",
+                        "TotalSeats": "1500",
+                        "CategorySalesChannel": "|M5|MOBILE|OUTLET|POS|TP|WEB|",
+                        "PriceDescEX": "",
+                        "DynamicPrice": false
+                    },
+                    "ET00083081-10116-T469": {
+                        "VenueCode": "JNSD",
+                        "SessionID": "10116",
+                        "EventCode": "ET00083081",
+                        "ShowDateDisplay": "Sunday, 18 Nov",
+                        "ShowTime": "03:00 PM",
+                        "cutOffTime": 201811181400,
+                        "VenueName": "Jawaharlal Nehru Stadium: Delhi",
+                        "CinemaIsSVG": "NONSVG",
+                        "IsSVG": "N",
+                        "location": "National Capital Region (NCR)",
+                        "dtmTime": "18-11-2018 15:00:00",
+                        "VenueMax": "10",
+                        "VenueAddress": "Gate No. 2, Open Arena, Near Lodi Colony, Pragati Vihar, Bhishma Pitamah Marg, Delhi, NCR 110003, India",
+                        "PriceCode": "T469",
+                        "PriceDesc": "Early Bird GA",
+                        "Price": "1500.00",
+                        "SeatsAvail": "N",
+                        "MaxTickets": 0,
+                        "SpecialCode": "",
+                        "AreaCatCode": "AC00000368",
+                        "SeatLayout": "N",
+                        "AdditionalPrice": "Rs. 1500.00",
+                        "AvailableSeats": "0",
+                        "TotalSeats": "367",
+                        "CategorySalesChannel": "|M5|MOBILE|OUTLET|POS|TP|WEB|",
+                        "PriceDescEX": "",
+                        "DynamicPrice": false
+                    }
+                }
+            }
+        }
+    },
+    "venueInfo": {
+        "National Capital Region (NCR)": {
+            "JNSD": {
+                "VenueCode": "JNSD",
+                "VenueName": "Jawaharlal Nehru Stadium: Delhi",
+                "CinemaIsSVG": "NONSVG",
+                "location": "National Capital Region (NCR)",
+                "VenueMax": "10",
+                "Latitude": "28.582628",
+                "Longitude": "77.234117",
+                "VenueType": "BT",
+                "DisplayGroupCode": "JNSD",
+                "IsFullLayout": "Y",
+                "CouponIsAllowed": "Y",
+                "VenueAddress": "Gate No. 2, Open Arena, Near Lodi Colony, Pragati Vihar, Bhishma Pitamah Marg, Delhi, NCR 110003, India"
+            }
+        }
+    },
+    "seoInfo": {
+        "canonicalURL": "https://in.bookmyshow.com/events/life-in-color-india/ET00083081",
+        "description": "Book online tickets for Life In Color India in NCR on BookMyShow which is a  event.",
+        "keywords": "Life In Color India tickets,tickets",
+        "mainEventType": "Event",
+        "place": "Event Venue",
+        "redirects": [
+            ""
+        ],
+        "slug": "life-in-color-india",
+        "title": "Life In Color India  event tickets NCR - BookMyShow",
+        "schema": "{\"@context\":\"http://schema.org\",\"@type\":\"Event\",\"name\":\"Life In Color India  event tickets NCR - BookMyShow\",\"url\":\"https://in.bookmyshow.com/events/life-in-color-india/ET00083081\",\"description\":\"Book online tickets for Life In Color India in NCR on BookMyShow which is a  event.\",\"startDate\":\"2018-11-18T00:00:00.000Z\",\"endDate\":\"2018-11-18T00:00:00.000Z\",\"location\":{\"@type\":\"EventVenue\",\"address\":\"Big Tree Entertainment Private Limited Ground Floor, Wajeda House, Gulmohar Cross Road No. 7, Juhu Scheme, Mumbai, Maharashtra - 400049\",\"telephone\":\"+9102261445050\"},\"performers\":[],\"offers\":[]}"
+    },
+    "artistsInfo": {
+        "Artist(s)": [
+            {
+                "CastCode": "1095628",
+                "CastName": "Diplo"
+            },
+            {
+                "CastCode": "1095629",
+                "CastName": "4B"
+            },
+            {
+                "CastCode": "1065080",
+                "CastName": "Divine"
+            },
+            {
+                "CastCode": "1062291",
+                "CastName": "Ritviz"
+            },
+            {
+                "CastCode": "1051239",
+                "CastName": "DJ Smokey"
+            }
+        ]
+    },
+    "promotion": {},
+    "payment": {
+        "bookingFee": "40",
+        "bookingFeeType": "F",
+        "flags": {
+            "singleTransaction": false
+        },
+        "handler": "native",
+        "pgCharges": "0",
+        "pgChargesType": "F",
+        "sac": "SAC004"
+    },
+    "seating": {},
+    "social": {},
+    "flags": {
+        "hasCorporateBooking": true,
+        "isComingSoon": false,
+        "isGlobal": false,
+        "isV3DesktopEnabled": true,
+        "isV3Enabled": true,
+        "isWebviewEnabled": true,
+        "status": true,
+        "hasPresales": false,
+        "hasPresalesRegistration": false,
+        "hasPresalesOnHold": false,
+        "hasPresalesPassed": false,
+        "hasOptionalForm": false,
+        "isRSVP": false,
+        "hasEventStartDatePassed": false,
+        "isRegistration": true,
+        "isMultipleForm": false,
+        "hasGallery": true,
+        "isSoldOut": false,
+        "areSessionsClosed": false,
+        "hasSeatLayoutInTickets": false
+    },
+    "bmsId": "1.496760488.1540362387239"
+}

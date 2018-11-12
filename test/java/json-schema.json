@@ -1,0 +1,3363 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "eventInfo",
+    "eventCards",
+    "venueInfo",
+    "seoInfo",
+    "artistsInfo",
+    "promotion",
+    "payment",
+    "seating",
+    "social",
+    "flags",
+    "bmsId"
+  ],
+  "properties": {
+    "eventInfo": {
+      "$id": "#/properties/eventInfo",
+      "type": "object",
+      "title": "The Eventinfo Schema",
+      "required": [
+        "title",
+        "goLiveDate",
+        "groupedEventCodes",
+        "dynamicPrice",
+        "banner",
+        "regMetaConfig",
+        "addons",
+        "businessSettings",
+        "contentCreatedDate",
+        "contentModifiedDate",
+        "id",
+        "offers",
+        "registration",
+        "status",
+        "settings",
+        "cityKey",
+        "venueKey",
+        "dateKey",
+        "timeKey",
+        "actualVenueKey",
+        "availableFlows",
+        "eventCode",
+        "metaFromDE",
+        "time",
+        "price"
+      ],
+      "properties": {
+        "title": {
+          "$id": "#/properties/eventInfo/properties/title",
+          "type": "string",
+          "title": "The Title Schema",
+          "default": "",
+          "examples": [
+            "Life In Color India"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "goLiveDate": {
+          "$id": "#/properties/eventInfo/properties/goLiveDate",
+          "type": "array",
+          "title": "The Golivedate Schema",
+          "items": {
+            "$id": "#/properties/eventInfo/properties/goLiveDate/items",
+            "type": "string",
+            "title": "The Items Schema",
+            "default": "",
+            "examples": [
+              "3 Sep,",
+              "Monday Onwards"
+            ],
+            "pattern": "^(.*)$"
+          }
+        },
+        "groupedEventCodes": {
+          "$id": "#/properties/eventInfo/properties/groupedEventCodes",
+          "type": "array",
+          "title": "The Groupedeventcodes Schema"
+        },
+        "dynamicPrice": {
+          "$id": "#/properties/eventInfo/properties/dynamicPrice",
+          "type": "boolean",
+          "title": "The Dynamicprice Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "banner": {
+          "$id": "#/properties/eventInfo/properties/banner",
+          "type": "object",
+          "title": "The Banner Schema",
+          "required": [
+            "desktop",
+            "mobile",
+            "mobileListing",
+            "superstarListing",
+            "venueListing",
+            "verticalBanner",
+            "webListing"
+          ],
+          "properties": {
+            "desktop": {
+              "$id": "#/properties/eventInfo/properties/banner/properties/desktop",
+              "type": "array",
+              "title": "The Desktop Schema",
+              "items": {
+                "$id": "#/properties/eventInfo/properties/banner/properties/desktop/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "required": [
+                  "src",
+                  "name",
+                  "type",
+                  "videoUrl",
+                  "href"
+                ],
+                "properties": {
+                  "src": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/desktop/items/properties/src",
+                    "type": "string",
+                    "title": "The Src Schema",
+                    "default": "",
+                    "examples": [
+                      "https://in.bmscdn.com/nmcms/media-desktop-life-in-color-india-2018-10-16-t-12-23-41.jpeg"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "name": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/desktop/items/properties/name",
+                    "type": "string",
+                    "title": "The Name Schema",
+                    "default": "",
+                    "examples": [
+                      "Life In Color India"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "type": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/desktop/items/properties/type",
+                    "type": "string",
+                    "title": "The Type Schema",
+                    "default": "",
+                    "examples": [
+                      "image"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "videoUrl": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/desktop/items/properties/videoUrl",
+                    "type": "null",
+                    "title": "The Videourl Schema",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  },
+                  "href": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/desktop/items/properties/href",
+                    "type": "string",
+                    "title": "The Href Schema",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ],
+                    "pattern": "^(.*)$"
+                  }
+                }
+              }
+            },
+            "mobile": {
+              "$id": "#/properties/eventInfo/properties/banner/properties/mobile",
+              "type": "array",
+              "title": "The Mobile Schema",
+              "items": {
+                "$id": "#/properties/eventInfo/properties/banner/properties/mobile/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "required": [
+                  "src",
+                  "name",
+                  "type",
+                  "videoUrl",
+                  "href"
+                ],
+                "properties": {
+                  "src": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/mobile/items/properties/src",
+                    "type": "string",
+                    "title": "The Src Schema",
+                    "default": "",
+                    "examples": [
+                      "https://in.bmscdn.com/nmcms/media-mobile-life-in-color-india-2018-10-16-t-12-23-47.jpeg"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "name": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/mobile/items/properties/name",
+                    "type": "string",
+                    "title": "The Name Schema",
+                    "default": "",
+                    "examples": [
+                      "Life In Color India"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "type": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/mobile/items/properties/type",
+                    "type": "string",
+                    "title": "The Type Schema",
+                    "default": "",
+                    "examples": [
+                      "image"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "videoUrl": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/mobile/items/properties/videoUrl",
+                    "type": "null",
+                    "title": "The Videourl Schema",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  },
+                  "href": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/mobile/items/properties/href",
+                    "type": "string",
+                    "title": "The Href Schema",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ],
+                    "pattern": "^(.*)$"
+                  }
+                }
+              }
+            },
+            "mobileListing": {
+              "$id": "#/properties/eventInfo/properties/banner/properties/mobileListing",
+              "type": "array",
+              "title": "The Mobilelisting Schema",
+              "items": {
+                "$id": "#/properties/eventInfo/properties/banner/properties/mobileListing/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "required": [
+                  "caption",
+                  "etCode",
+                  "name",
+                  "size",
+                  "thumbnail",
+                  "type",
+                  "url"
+                ],
+                "properties": {
+                  "caption": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/mobileListing/items/properties/caption",
+                    "type": "string",
+                    "title": "The Caption Schema",
+                    "default": "",
+                    "examples": [
+                      "Life In Color India"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "etCode": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/mobileListing/items/properties/etCode",
+                    "type": "string",
+                    "title": "The Etcode Schema",
+                    "default": "",
+                    "examples": [
+                      "ET00083081"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "name": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/mobileListing/items/properties/name",
+                    "type": "string",
+                    "title": "The Name Schema",
+                    "default": "",
+                    "examples": [
+                      "ET00083081.jpg"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "size": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/mobileListing/items/properties/size",
+                    "type": "integer",
+                    "title": "The Size Schema",
+                    "default": 0,
+                    "examples": [
+                      38151
+                    ]
+                  },
+                  "thumbnail": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/mobileListing/items/properties/thumbnail",
+                    "type": "string",
+                    "title": "The Thumbnail Schema",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "type": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/mobileListing/items/properties/type",
+                    "type": "string",
+                    "title": "The Type Schema",
+                    "default": "",
+                    "examples": [
+                      "image"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "url": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/mobileListing/items/properties/url",
+                    "type": "string",
+                    "title": "The Url Schema",
+                    "default": "",
+                    "examples": [
+                      "https://in.bmscdn.com/nmcms/events/banner/mobilelisting/et00083081.jpg?20181023124609"
+                    ],
+                    "pattern": "^(.*)$"
+                  }
+                }
+              }
+            },
+            "superstarListing": {
+              "$id": "#/properties/eventInfo/properties/banner/properties/superstarListing",
+              "type": "array",
+              "title": "The Superstarlisting Schema",
+              "items": {
+                "$id": "#/properties/eventInfo/properties/banner/properties/superstarListing/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "required": [
+                  "caption",
+                  "etCode",
+                  "name",
+                  "size",
+                  "targetURL",
+                  "thumbnail",
+                  "type",
+                  "url"
+                ],
+                "properties": {
+                  "caption": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/superstarListing/items/properties/caption",
+                    "type": "string",
+                    "title": "The Caption Schema",
+                    "default": "",
+                    "examples": [
+                      "Life In Color India"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "etCode": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/superstarListing/items/properties/etCode",
+                    "type": "string",
+                    "title": "The Etcode Schema",
+                    "default": "",
+                    "examples": [
+                      "ET00083081"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "name": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/superstarListing/items/properties/name",
+                    "type": "string",
+                    "title": "The Name Schema",
+                    "default": "",
+                    "examples": [
+                      "webin/loyalty/events/et00083081.jpg"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "size": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/superstarListing/items/properties/size",
+                    "type": "integer",
+                    "title": "The Size Schema",
+                    "default": 0,
+                    "examples": [
+                      172651
+                    ]
+                  },
+                  "targetURL": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/superstarListing/items/properties/targetURL",
+                    "type": "string",
+                    "title": "The Targeturl Schema",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "thumbnail": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/superstarListing/items/properties/thumbnail",
+                    "type": "string",
+                    "title": "The Thumbnail Schema",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "type": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/superstarListing/items/properties/type",
+                    "type": "string",
+                    "title": "The Type Schema",
+                    "default": "",
+                    "examples": [
+                      "image"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "url": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/superstarListing/items/properties/url",
+                    "type": "string",
+                    "title": "The Url Schema",
+                    "default": "",
+                    "examples": [
+                      "https://in.bmscdn.com/nmcms/webin/loyalty/events/et00083081.jpg?20180911113714"
+                    ],
+                    "pattern": "^(.*)$"
+                  }
+                }
+              }
+            },
+            "venueListing": {
+              "$id": "#/properties/eventInfo/properties/banner/properties/venueListing",
+              "type": "array",
+              "title": "The Venuelisting Schema",
+              "items": {
+                "$id": "#/properties/eventInfo/properties/banner/properties/venueListing/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "required": [
+                  "caption",
+                  "name",
+                  "size",
+                  "targetURL",
+                  "thumbnail",
+                  "type",
+                  "url"
+                ],
+                "properties": {
+                  "caption": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/venueListing/items/properties/caption",
+                    "type": "string",
+                    "title": "The Caption Schema",
+                    "default": "",
+                    "examples": [
+                      "Life In Color India"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "name": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/venueListing/items/properties/name",
+                    "type": "string",
+                    "title": "The Name Schema",
+                    "default": "",
+                    "examples": [
+                      "events/banner/venuelisting/et00083081.jpg"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "size": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/venueListing/items/properties/size",
+                    "type": "integer",
+                    "title": "The Size Schema",
+                    "default": 0,
+                    "examples": [
+                      37483
+                    ]
+                  },
+                  "targetURL": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/venueListing/items/properties/targetURL",
+                    "type": "string",
+                    "title": "The Targeturl Schema",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "thumbnail": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/venueListing/items/properties/thumbnail",
+                    "type": "string",
+                    "title": "The Thumbnail Schema",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "type": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/venueListing/items/properties/type",
+                    "type": "string",
+                    "title": "The Type Schema",
+                    "default": "",
+                    "examples": [
+                      "image"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "url": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/venueListing/items/properties/url",
+                    "type": "string",
+                    "title": "The Url Schema",
+                    "default": "",
+                    "examples": [
+                      "https://in.bmscdn.com/nmcms/events/banner/venuelisting/et00083081.jpg?20181008170204"
+                    ],
+                    "pattern": "^(.*)$"
+                  }
+                }
+              }
+            },
+            "verticalBanner": {
+              "$id": "#/properties/eventInfo/properties/banner/properties/verticalBanner",
+              "type": "array",
+              "title": "The Verticalbanner Schema"
+            },
+            "webListing": {
+              "$id": "#/properties/eventInfo/properties/banner/properties/webListing",
+              "type": "array",
+              "title": "The Weblisting Schema",
+              "items": {
+                "$id": "#/properties/eventInfo/properties/banner/properties/webListing/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "required": [
+                  "caption",
+                  "name",
+                  "size",
+                  "targetURL",
+                  "thumbnail",
+                  "type",
+                  "url"
+                ],
+                "properties": {
+                  "caption": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/webListing/items/properties/caption",
+                    "type": "string",
+                    "title": "The Caption Schema",
+                    "default": "",
+                    "examples": [
+                      "Life In Color India"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "name": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/webListing/items/properties/name",
+                    "type": "string",
+                    "title": "The Name Schema",
+                    "default": "",
+                    "examples": [
+                      "events/banner/weblisting/et00083081.jpg"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "size": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/webListing/items/properties/size",
+                    "type": "integer",
+                    "title": "The Size Schema",
+                    "default": 0,
+                    "examples": [
+                      37017
+                    ]
+                  },
+                  "targetURL": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/webListing/items/properties/targetURL",
+                    "type": "string",
+                    "title": "The Targeturl Schema",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "thumbnail": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/webListing/items/properties/thumbnail",
+                    "type": "string",
+                    "title": "The Thumbnail Schema",
+                    "default": "",
+                    "examples": [
+                      ""
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "type": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/webListing/items/properties/type",
+                    "type": "string",
+                    "title": "The Type Schema",
+                    "default": "",
+                    "examples": [
+                      "image"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "url": {
+                    "$id": "#/properties/eventInfo/properties/banner/properties/webListing/items/properties/url",
+                    "type": "string",
+                    "title": "The Url Schema",
+                    "default": "",
+                    "examples": [
+                      "https://in.bmscdn.com/nmcms/events/banner/weblisting/et00083081.jpg?20181008170200"
+                    ],
+                    "pattern": "^(.*)$"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "regMetaConfig": {
+          "$id": "#/properties/eventInfo/properties/regMetaConfig",
+          "type": "object",
+          "title": "The Regmetaconfig Schema",
+          "required": [
+            "CorporateBooking"
+          ],
+          "properties": {
+            "CorporateBooking": {
+              "$id": "#/properties/eventInfo/properties/regMetaConfig/properties/CorporateBooking",
+              "type": "array",
+              "title": "The Corporatebooking Schema",
+              "items": {
+                "$id": "#/properties/eventInfo/properties/regMetaConfig/properties/CorporateBooking/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "required": [
+                  "custom_field",
+                  "isMemberidMandatory",
+                  "loggedIn_user",
+                  "repeatForms",
+                  "optionalForm",
+                  "regStart",
+                  "regEnd"
+                ],
+                "properties": {
+                  "custom_field": {
+                    "$id": "#/properties/eventInfo/properties/regMetaConfig/properties/CorporateBooking/items/properties/custom_field",
+                    "type": "object",
+                    "title": "The Custom_field Schema",
+                    "required": [
+                      "formType"
+                    ],
+                    "properties": {
+                      "formType": {
+                        "$id": "#/properties/eventInfo/properties/regMetaConfig/properties/CorporateBooking/items/properties/custom_field/properties/formType",
+                        "type": "array",
+                        "title": "The Formtype Schema",
+                        "items": {
+                          "$id": "#/properties/eventInfo/properties/regMetaConfig/properties/CorporateBooking/items/properties/custom_field/properties/formType/items",
+                          "type": "string",
+                          "title": "The Items Schema",
+                          "default": "",
+                          "examples": [
+                            "CorporateBooking"
+                          ],
+                          "pattern": "^(.*)$"
+                        }
+                      }
+                    }
+                  },
+                  "isMemberidMandatory": {
+                    "$id": "#/properties/eventInfo/properties/regMetaConfig/properties/CorporateBooking/items/properties/isMemberidMandatory",
+                    "type": "boolean",
+                    "title": "The Ismemberidmandatory Schema",
+                    "default": false,
+                    "examples": [
+                      false
+                    ]
+                  },
+                  "loggedIn_user": {
+                    "$id": "#/properties/eventInfo/properties/regMetaConfig/properties/CorporateBooking/items/properties/loggedIn_user",
+                    "type": "boolean",
+                    "title": "The Loggedin_user Schema",
+                    "default": false,
+                    "examples": [
+                      false
+                    ]
+                  },
+                  "repeatForms": {
+                    "$id": "#/properties/eventInfo/properties/regMetaConfig/properties/CorporateBooking/items/properties/repeatForms",
+                    "type": "boolean",
+                    "title": "The Repeatforms Schema",
+                    "default": false,
+                    "examples": [
+                      false
+                    ]
+                  },
+                  "optionalForm": {
+                    "$id": "#/properties/eventInfo/properties/regMetaConfig/properties/CorporateBooking/items/properties/optionalForm",
+                    "type": "boolean",
+                    "title": "The Optionalform Schema",
+                    "default": false,
+                    "examples": [
+                      false
+                    ]
+                  },
+                  "regStart": {
+                    "$id": "#/properties/eventInfo/properties/regMetaConfig/properties/CorporateBooking/items/properties/regStart",
+                    "type": "string",
+                    "title": "The Regstart Schema",
+                    "default": "",
+                    "examples": [
+                      "2018-09-14T07:50:00Z"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "regEnd": {
+                    "$id": "#/properties/eventInfo/properties/regMetaConfig/properties/CorporateBooking/items/properties/regEnd",
+                    "type": "null",
+                    "title": "The Regend Schema",
+                    "default": null,
+                    "examples": [
+                      null
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "addons": {
+          "$id": "#/properties/eventInfo/properties/addons",
+          "type": "object",
+          "title": "The Addons Schema",
+          "required": [
+            "flows"
+          ],
+          "properties": {
+            "flows": {
+              "$id": "#/properties/eventInfo/properties/addons/properties/flows",
+              "type": "array",
+              "title": "The Flows Schema"
+            }
+          }
+        },
+        "businessSettings": {
+          "$id": "#/properties/eventInfo/properties/businessSettings",
+          "type": "object",
+          "title": "The Businesssettings Schema",
+          "required": [
+            "bdID",
+            "bdName",
+            "merchantID",
+            "organizerID",
+            "vendorID"
+          ],
+          "properties": {
+            "bdID": {
+              "$id": "#/properties/eventInfo/properties/businessSettings/properties/bdID",
+              "type": "string",
+              "title": "The Bdid Schema",
+              "default": "",
+              "examples": [
+                "11"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "bdName": {
+              "$id": "#/properties/eventInfo/properties/businessSettings/properties/bdName",
+              "type": "string",
+              "title": "The Bdname Schema",
+              "default": "",
+              "examples": [
+                "Achyuth Nagubothu"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "merchantID": {
+              "$id": "#/properties/eventInfo/properties/businessSettings/properties/merchantID",
+              "type": "string",
+              "title": "The Merchantid Schema",
+              "default": "",
+              "examples": [
+                "BMSM000000215"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "organizerID": {
+              "$id": "#/properties/eventInfo/properties/businessSettings/properties/organizerID",
+              "type": "string",
+              "title": "The Organizerid Schema",
+              "default": "",
+              "examples": [
+                "O-122"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "vendorID": {
+              "$id": "#/properties/eventInfo/properties/businessSettings/properties/vendorID",
+              "type": "string",
+              "title": "The Vendorid Schema",
+              "default": "",
+              "examples": [
+                "O-122"
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        },
+        "contentCreatedDate": {
+          "$id": "#/properties/eventInfo/properties/contentCreatedDate",
+          "type": "string",
+          "title": "The Contentcreateddate Schema",
+          "default": "",
+          "examples": [
+            "2018-09-03T12:18:44.885Z"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "contentModifiedDate": {
+          "$id": "#/properties/eventInfo/properties/contentModifiedDate",
+          "type": "string",
+          "title": "The Contentmodifieddate Schema",
+          "default": "",
+          "examples": [
+            "2018-10-23T07:16:09.957Z"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "id": {
+          "$id": "#/properties/eventInfo/properties/id",
+          "type": "string",
+          "title": "The Id Schema",
+          "default": "",
+          "examples": [
+            "5b8d26a453f1e529e1f694cd"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "offers": {
+          "$id": "#/properties/eventInfo/properties/offers",
+          "type": "object",
+          "title": "The Offers Schema",
+          "required": [
+            "items"
+          ],
+          "properties": {
+            "items": {
+              "$id": "#/properties/eventInfo/properties/offers/properties/items",
+              "type": "array",
+              "title": "The Items Schema"
+            }
+          }
+        },
+        "registration": {
+          "$id": "#/properties/eventInfo/properties/registration",
+          "type": "object",
+          "title": "The Registration Schema",
+          "required": [
+            "flags"
+          ],
+          "properties": {
+            "flags": {
+              "$id": "#/properties/eventInfo/properties/registration/properties/flags",
+              "type": "object",
+              "title": "The Flags Schema",
+              "required": [
+                "isPresale",
+                "isTransactional"
+              ],
+              "properties": {
+                "isPresale": {
+                  "$id": "#/properties/eventInfo/properties/registration/properties/flags/properties/isPresale",
+                  "type": "boolean",
+                  "title": "The Ispresale Schema",
+                  "default": false,
+                  "examples": [
+                    true
+                  ]
+                },
+                "isTransactional": {
+                  "$id": "#/properties/eventInfo/properties/registration/properties/flags/properties/isTransactional",
+                  "type": "boolean",
+                  "title": "The Istransactional Schema",
+                  "default": false,
+                  "examples": [
+                    false
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "status": {
+          "$id": "#/properties/eventInfo/properties/status",
+          "type": "string",
+          "title": "The Status Schema",
+          "default": "",
+          "examples": [
+            "active"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "settings": {
+          "$id": "#/properties/eventInfo/properties/settings",
+          "type": "object",
+          "title": "The Settings Schema",
+          "required": [
+            "bouuid",
+            "category",
+            "code",
+            "codes",
+            "duration",
+            "eventStartDate",
+            "genre",
+            "golive",
+            "languages",
+            "presaleEnd",
+            "presaleStart",
+            "region",
+            "regionDetails",
+            "subCategory",
+            "type",
+            "url"
+          ],
+          "properties": {
+            "bouuid": {
+              "$id": "#/properties/eventInfo/properties/settings/properties/bouuid",
+              "type": "string",
+              "title": "The Bouuid Schema",
+              "default": "",
+              "examples": [
+                "nmcms|d2986993-6a28-4ed4-8bc4-8159a6a23f54"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "category": {
+              "$id": "#/properties/eventInfo/properties/settings/properties/category",
+              "type": "string",
+              "title": "The Category Schema",
+              "default": "",
+              "examples": [
+                "Music"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "code": {
+              "$id": "#/properties/eventInfo/properties/settings/properties/code",
+              "type": "string",
+              "title": "The Code Schema",
+              "default": "",
+              "examples": [
+                "ET00083081"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "codes": {
+              "$id": "#/properties/eventInfo/properties/settings/properties/codes",
+              "type": "array",
+              "title": "The Codes Schema"
+            },
+            "duration": {
+              "$id": "#/properties/eventInfo/properties/settings/properties/duration",
+              "type": "integer",
+              "title": "The Duration Schema",
+              "default": 0,
+              "examples": [
+                420
+              ]
+            },
+            "eventStartDate": {
+              "$id": "#/properties/eventInfo/properties/settings/properties/eventStartDate",
+              "type": "string",
+              "title": "The Eventstartdate Schema",
+              "default": "",
+              "examples": [
+                "2018-11-18T00:00:00Z"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "genre": {
+              "$id": "#/properties/eventInfo/properties/settings/properties/genre",
+              "type": "array",
+              "title": "The Genre Schema"
+            },
+            "golive": {
+              "$id": "#/properties/eventInfo/properties/settings/properties/golive",
+              "type": "string",
+              "title": "The Golive Schema",
+              "default": "",
+              "examples": [
+                "2018-09-02T18:30:00Z"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "languages": {
+              "$id": "#/properties/eventInfo/properties/settings/properties/languages",
+              "type": "array",
+              "title": "The Languages Schema",
+              "items": {
+                "$id": "#/properties/eventInfo/properties/settings/properties/languages/items",
+                "type": "string",
+                "title": "The Items Schema",
+                "default": "",
+                "examples": [
+                  "English"
+                ],
+                "pattern": "^(.*)$"
+              }
+            },
+            "presaleEnd": {
+              "$id": "#/properties/eventInfo/properties/settings/properties/presaleEnd",
+              "type": "string",
+              "title": "The Presaleend Schema",
+              "default": "",
+              "examples": [
+                "2018-09-13T18:25:00Z"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "presaleStart": {
+              "$id": "#/properties/eventInfo/properties/settings/properties/presaleStart",
+              "type": "string",
+              "title": "The Presalestart Schema",
+              "default": "",
+              "examples": [
+                "2018-09-11T06:15:00Z"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "region": {
+              "$id": "#/properties/eventInfo/properties/settings/properties/region",
+              "type": "string",
+              "title": "The Region Schema",
+              "default": "",
+              "examples": [
+                "NCR"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "regionDetails": {
+              "$id": "#/properties/eventInfo/properties/settings/properties/regionDetails",
+              "type": "array",
+              "title": "The Regiondetails Schema",
+              "items": {
+                "$id": "#/properties/eventInfo/properties/settings/properties/regionDetails/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "required": [
+                  "regionCode",
+                  "regionName",
+                  "stateCode",
+                  "stateName",
+                  "subRegionCode",
+                  "subRegionName"
+                ],
+                "properties": {
+                  "regionCode": {
+                    "$id": "#/properties/eventInfo/properties/settings/properties/regionDetails/items/properties/regionCode",
+                    "type": "string",
+                    "title": "The Regioncode Schema",
+                    "default": "",
+                    "examples": [
+                      "PUNE"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "regionName": {
+                    "$id": "#/properties/eventInfo/properties/settings/properties/regionDetails/items/properties/regionName",
+                    "type": "string",
+                    "title": "The Regionname Schema",
+                    "default": "",
+                    "examples": [
+                      "Pune"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "stateCode": {
+                    "$id": "#/properties/eventInfo/properties/settings/properties/regionDetails/items/properties/stateCode",
+                    "type": "integer",
+                    "title": "The Statecode Schema",
+                    "default": 0,
+                    "examples": [
+                      1
+                    ]
+                  },
+                  "stateName": {
+                    "$id": "#/properties/eventInfo/properties/settings/properties/regionDetails/items/properties/stateName",
+                    "type": "string",
+                    "title": "The Statename Schema",
+                    "default": "",
+                    "examples": [
+                      "Maharashtra"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "subRegionCode": {
+                    "$id": "#/properties/eventInfo/properties/settings/properties/regionDetails/items/properties/subRegionCode",
+                    "type": "string",
+                    "title": "The Subregioncode Schema",
+                    "default": "",
+                    "examples": [
+                      "PUNE-PUNE"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "subRegionName": {
+                    "$id": "#/properties/eventInfo/properties/settings/properties/regionDetails/items/properties/subRegionName",
+                    "type": "string",
+                    "title": "The Subregionname Schema",
+                    "default": "",
+                    "examples": [
+                      "Pune"
+                    ],
+                    "pattern": "^(.*)$"
+                  }
+                }
+              }
+            },
+            "subCategory": {
+              "$id": "#/properties/eventInfo/properties/settings/properties/subCategory",
+              "type": "string",
+              "title": "The Subcategory Schema",
+              "default": "",
+              "examples": [
+                "Electronic & Dance"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "type": {
+              "$id": "#/properties/eventInfo/properties/settings/properties/type",
+              "type": "string",
+              "title": "The Type Schema",
+              "default": "",
+              "examples": [
+                "event"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "url": {
+              "$id": "#/properties/eventInfo/properties/settings/properties/url",
+              "type": "string",
+              "title": "The Url Schema",
+              "default": "",
+              "examples": [
+                "https://in.bookmyshow.com/events/life-in-color-india/ET00083081"
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        },
+        "cityKey": {
+          "$id": "#/properties/eventInfo/properties/cityKey",
+          "type": "string",
+          "title": "The Citykey Schema",
+          "default": "",
+          "examples": [
+            "National Capital Region (NCR)"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "venueKey": {
+          "$id": "#/properties/eventInfo/properties/venueKey",
+          "type": "string",
+          "title": "The Venuekey Schema",
+          "default": "",
+          "examples": [
+            "JNSD"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "dateKey": {
+          "$id": "#/properties/eventInfo/properties/dateKey",
+          "type": "string",
+          "title": "The Datekey Schema",
+          "default": "",
+          "examples": [
+            "multiple"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "timeKey": {
+          "$id": "#/properties/eventInfo/properties/timeKey",
+          "type": "string",
+          "title": "The Timekey Schema",
+          "default": "",
+          "examples": [
+            "1500"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "actualVenueKey": {
+          "$id": "#/properties/eventInfo/properties/actualVenueKey",
+          "type": "string",
+          "title": "The Actualvenuekey Schema",
+          "default": "",
+          "examples": [
+            "JNSD"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "availableFlows": {
+          "$id": "#/properties/eventInfo/properties/availableFlows",
+          "type": "array",
+          "title": "The Availableflows Schema",
+          "items": {
+            "$id": "#/properties/eventInfo/properties/availableFlows/items",
+            "type": "string",
+            "title": "The Items Schema",
+            "default": "",
+            "examples": [
+              "datetime",
+              "tickets"
+            ],
+            "pattern": "^(.*)$"
+          }
+        },
+        "eventCode": {
+          "$id": "#/properties/eventInfo/properties/eventCode",
+          "type": "string",
+          "title": "The Eventcode Schema",
+          "default": "",
+          "examples": [
+            "ET00083081"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "metaFromDE": {
+          "$id": "#/properties/eventInfo/properties/metaFromDE",
+          "type": "object",
+          "title": "The Metafromde Schema",
+          "required": [
+            "title",
+            "imageCode",
+            "eventType",
+            "genre",
+            "language",
+            "length",
+            "fshareUrl",
+            "releaseDate",
+            "BannerURL",
+            "webRedirectUrl",
+            "eventifierID"
+          ],
+          "properties": {
+            "title": {
+              "$id": "#/properties/eventInfo/properties/metaFromDE/properties/title",
+              "type": "string",
+              "title": "The Title Schema",
+              "default": "",
+              "examples": [
+                "Life In Color India"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "imageCode": {
+              "$id": "#/properties/eventInfo/properties/metaFromDE/properties/imageCode",
+              "type": "string",
+              "title": "The Imagecode Schema",
+              "default": "",
+              "examples": [
+                "ET00083081"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "eventType": {
+              "$id": "#/properties/eventInfo/properties/metaFromDE/properties/eventType",
+              "type": "string",
+              "title": "The Eventtype Schema",
+              "default": "",
+              "examples": [
+                "CT"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "genre": {
+              "$id": "#/properties/eventInfo/properties/metaFromDE/properties/genre",
+              "type": "array",
+              "title": "The Genre Schema",
+              "items": {
+                "$id": "#/properties/eventInfo/properties/metaFromDE/properties/genre/items",
+                "type": "string",
+                "title": "The Items Schema",
+                "default": "",
+                "examples": [
+                  "Music"
+                ],
+                "pattern": "^(.*)$"
+              }
+            },
+            "language": {
+              "$id": "#/properties/eventInfo/properties/metaFromDE/properties/language",
+              "type": "string",
+              "title": "The Language Schema",
+              "default": "",
+              "examples": [
+                "English"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "length": {
+              "$id": "#/properties/eventInfo/properties/metaFromDE/properties/length",
+              "type": "string",
+              "title": "The Length Schema",
+              "default": "",
+              "examples": [
+                "7 hrs "
+              ],
+              "pattern": "^(.*)$"
+            },
+            "fshareUrl": {
+              "$id": "#/properties/eventInfo/properties/metaFromDE/properties/fshareUrl",
+              "type": "string",
+              "title": "The Fshareurl Schema",
+              "default": "",
+              "examples": [
+                "https://in.bookmyshow.com/events/life-in-color-india/ET00083081"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "releaseDate": {
+              "$id": "#/properties/eventInfo/properties/metaFromDE/properties/releaseDate",
+              "type": "string",
+              "title": "The Releasedate Schema",
+              "default": "",
+              "examples": [
+                "20181118"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "BannerURL": {
+              "$id": "#/properties/eventInfo/properties/metaFromDE/properties/BannerURL",
+              "type": "string",
+              "title": "The Bannerurl Schema",
+              "default": "",
+              "examples": [
+                "//in.bmscdn.com/Events/Mobile/ET00083081.jpg?201810260508"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "webRedirectUrl": {
+              "$id": "#/properties/eventInfo/properties/metaFromDE/properties/webRedirectUrl",
+              "type": "string",
+              "title": "The Webredirecturl Schema",
+              "default": "",
+              "examples": [
+                "https://in.bookmyshow.com/events/life-in-color-india/ET00083081"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "eventifierID": {
+              "$id": "#/properties/eventInfo/properties/metaFromDE/properties/eventifierID",
+              "type": "string",
+              "title": "The Eventifierid Schema",
+              "default": "",
+              "examples": [
+                ""
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        },
+        "time": {
+          "$id": "#/properties/eventInfo/properties/time",
+          "type": "object",
+          "title": "The Time Schema",
+          "required": [
+            "start",
+            "end"
+          ],
+          "properties": {
+            "start": {
+              "$id": "#/properties/eventInfo/properties/time/properties/start",
+              "type": "object",
+              "title": "The Start Schema",
+              "required": [
+                "date",
+                "time"
+              ],
+              "properties": {
+                "date": {
+                  "$id": "#/properties/eventInfo/properties/time/properties/start/properties/date",
+                  "type": "string",
+                  "title": "The Date Schema",
+                  "default": "",
+                  "examples": [
+                    "20181118"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "time": {
+                  "$id": "#/properties/eventInfo/properties/time/properties/start/properties/time",
+                  "type": "string",
+                  "title": "The Time Schema",
+                  "default": "",
+                  "examples": [
+                    "1500"
+                  ],
+                  "pattern": "^(.*)$"
+                }
+              }
+            },
+            "end": {
+              "$id": "#/properties/eventInfo/properties/time/properties/end",
+              "type": "object",
+              "title": "The End Schema",
+              "required": [
+                "date"
+              ],
+              "properties": {
+                "date": {
+                  "$id": "#/properties/eventInfo/properties/time/properties/end/properties/date",
+                  "type": "string",
+                  "title": "The Date Schema",
+                  "default": "",
+                  "examples": [
+                    ""
+                  ],
+                  "pattern": "^(.*)$"
+                }
+              }
+            }
+          }
+        },
+        "price": {
+          "$id": "#/properties/eventInfo/properties/price",
+          "type": "object",
+          "title": "The Price Schema",
+          "required": [
+            "minPrice",
+            "maxPrice"
+          ],
+          "properties": {
+            "minPrice": {
+              "$id": "#/properties/eventInfo/properties/price/properties/minPrice",
+              "type": "integer",
+              "title": "The Minprice Schema",
+              "default": 0,
+              "examples": [
+                1500
+              ]
+            },
+            "maxPrice": {
+              "$id": "#/properties/eventInfo/properties/price/properties/maxPrice",
+              "type": "integer",
+              "title": "The Maxprice Schema",
+              "default": 0,
+              "examples": [
+                3000
+              ]
+            }
+          }
+        }
+      }
+    },
+    "eventCards": {
+      "$id": "#/properties/eventCards",
+      "type": "object",
+      "title": "The Eventcards Schema",
+      "required": [
+        "JNSD"
+      ],
+      "properties": {
+        "JNSD": {
+          "$id": "#/properties/eventCards/properties/JNSD",
+          "type": "object",
+          "title": "The Jnsd Schema",
+          "required": [
+            "20181118"
+          ],
+          "properties": {
+            "20181118": {
+              "$id": "#/properties/eventCards/properties/JNSD/properties/20181118",
+              "type": "object",
+              "title": "The 20181118 Schema",
+              "required": [
+                "1500"
+              ],
+              "properties": {
+                "1500": {
+                  "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500",
+                  "type": "object",
+                  "title": "The 1500 Schema",
+                  "required": [
+                    "ET00083081-10116-T472",
+                    "ET00083081-10116-T470",
+                    "ET00083081-10116-T471",
+                    "ET00083081-10116-T469"
+                  ],
+                  "properties": {
+                    "ET00083081-10116-T472": {
+                      "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472",
+                      "type": "object",
+                      "title": "The Et00083081-10116-t472 Schema",
+                      "required": [
+                        "VenueCode",
+                        "SessionID",
+                        "EventCode",
+                        "ShowDateDisplay",
+                        "ShowTime",
+                        "cutOffTime",
+                        "VenueName",
+                        "CinemaIsSVG",
+                        "IsSVG",
+                        "location",
+                        "dtmTime",
+                        "VenueMax",
+                        "VenueAddress",
+                        "PriceCode",
+                        "PriceDesc",
+                        "Price",
+                        "SeatsAvail",
+                        "MaxTickets",
+                        "SpecialCode",
+                        "AreaCatCode",
+                        "SeatLayout",
+                        "AdditionalPrice",
+                        "AvailableSeats",
+                        "TotalSeats",
+                        "CategorySalesChannel",
+                        "PriceDescEX",
+                        "DynamicPrice"
+                      ],
+                      "properties": {
+                        "VenueCode": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/VenueCode",
+                          "type": "string",
+                          "title": "The Venuecode Schema",
+                          "default": "",
+                          "examples": [
+                            "JNSD"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "SessionID": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/SessionID",
+                          "type": "string",
+                          "title": "The Sessionid Schema",
+                          "default": "",
+                          "examples": [
+                            "10116"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "EventCode": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/EventCode",
+                          "type": "string",
+                          "title": "The Eventcode Schema",
+                          "default": "",
+                          "examples": [
+                            "ET00083081"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "ShowDateDisplay": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/ShowDateDisplay",
+                          "type": "string",
+                          "title": "The Showdatedisplay Schema",
+                          "default": "",
+                          "examples": [
+                            "Sunday, 18 Nov"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "ShowTime": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/ShowTime",
+                          "type": "string",
+                          "title": "The Showtime Schema",
+                          "default": "",
+                          "examples": [
+                            "03:00 PM"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "cutOffTime": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/cutOffTime",
+                          "type": "integer",
+                          "title": "The Cutofftime Schema",
+                          "default": 0,
+                          "examples": [
+                            201811181400
+                          ]
+                        },
+                        "VenueName": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/VenueName",
+                          "type": "string",
+                          "title": "The Venuename Schema",
+                          "default": "",
+                          "examples": [
+                            "Jawaharlal Nehru Stadium: Delhi"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "CinemaIsSVG": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/CinemaIsSVG",
+                          "type": "string",
+                          "title": "The Cinemaissvg Schema",
+                          "default": "",
+                          "examples": [
+                            "NONSVG"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "IsSVG": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/IsSVG",
+                          "type": "string",
+                          "title": "The Issvg Schema",
+                          "default": "",
+                          "examples": [
+                            "N"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "location": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/location",
+                          "type": "string",
+                          "title": "The Location Schema",
+                          "default": "",
+                          "examples": [
+                            "National Capital Region (NCR)"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "dtmTime": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/dtmTime",
+                          "type": "string",
+                          "title": "The Dtmtime Schema",
+                          "default": "",
+                          "examples": [
+                            "18-11-2018 15:00:00"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "VenueMax": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/VenueMax",
+                          "type": "string",
+                          "title": "The Venuemax Schema",
+                          "default": "",
+                          "examples": [
+                            "10"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "VenueAddress": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/VenueAddress",
+                          "type": "string",
+                          "title": "The Venueaddress Schema",
+                          "default": "",
+                          "examples": [
+                            "Gate No. 2, Open Arena, Near Lodi Colony, Pragati Vihar, Bhishma Pitamah Marg, Delhi, NCR 110003, India"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "PriceCode": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/PriceCode",
+                          "type": "string",
+                          "title": "The Pricecode Schema",
+                          "default": "",
+                          "examples": [
+                            "T472"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "PriceDesc": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/PriceDesc",
+                          "type": "string",
+                          "title": "The Pricedesc Schema",
+                          "default": "",
+                          "examples": [
+                            "Phase 1 VIP"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "Price": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/Price",
+                          "type": "string",
+                          "title": "The Price Schema",
+                          "default": "",
+                          "examples": [
+                            "3000.00"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "SeatsAvail": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/SeatsAvail",
+                          "type": "string",
+                          "title": "The Seatsavail Schema",
+                          "default": "",
+                          "examples": [
+                            "Y"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "MaxTickets": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/MaxTickets",
+                          "type": "integer",
+                          "title": "The Maxtickets Schema",
+                          "default": 0,
+                          "examples": [
+                            10
+                          ]
+                        },
+                        "SpecialCode": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/SpecialCode",
+                          "type": "string",
+                          "title": "The Specialcode Schema",
+                          "default": "",
+                          "examples": [
+                            ""
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "AreaCatCode": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/AreaCatCode",
+                          "type": "string",
+                          "title": "The Areacatcode Schema",
+                          "default": "",
+                          "examples": [
+                            "AC00000371"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "SeatLayout": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/SeatLayout",
+                          "type": "string",
+                          "title": "The Seatlayout Schema",
+                          "default": "",
+                          "examples": [
+                            "N"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "AdditionalPrice": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/AdditionalPrice",
+                          "type": "string",
+                          "title": "The Additionalprice Schema",
+                          "default": "",
+                          "examples": [
+                            "Rs. 3000.00"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "AvailableSeats": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/AvailableSeats",
+                          "type": "string",
+                          "title": "The Availableseats Schema",
+                          "default": "",
+                          "examples": [
+                            "190"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "TotalSeats": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/TotalSeats",
+                          "type": "string",
+                          "title": "The Totalseats Schema",
+                          "default": "",
+                          "examples": [
+                            "300"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "CategorySalesChannel": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/CategorySalesChannel",
+                          "type": "string",
+                          "title": "The Categorysaleschannel Schema",
+                          "default": "",
+                          "examples": [
+                            "|M5|MOBILE|OUTLET|POS|TP|WEB|"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "PriceDescEX": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/PriceDescEX",
+                          "type": "string",
+                          "title": "The Pricedescex Schema",
+                          "default": "",
+                          "examples": [
+                            ""
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "DynamicPrice": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T472/properties/DynamicPrice",
+                          "type": "boolean",
+                          "title": "The Dynamicprice Schema",
+                          "default": false,
+                          "examples": [
+                            false
+                          ]
+                        }
+                      }
+                    },
+                    "ET00083081-10116-T470": {
+                      "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470",
+                      "type": "object",
+                      "title": "The Et00083081-10116-t470 Schema",
+                      "required": [
+                        "VenueCode",
+                        "SessionID",
+                        "EventCode",
+                        "ShowDateDisplay",
+                        "ShowTime",
+                        "cutOffTime",
+                        "VenueName",
+                        "CinemaIsSVG",
+                        "IsSVG",
+                        "location",
+                        "dtmTime",
+                        "VenueMax",
+                        "VenueAddress",
+                        "PriceCode",
+                        "PriceDesc",
+                        "Price",
+                        "SeatsAvail",
+                        "MaxTickets",
+                        "SpecialCode",
+                        "AreaCatCode",
+                        "SeatLayout",
+                        "AdditionalPrice",
+                        "AvailableSeats",
+                        "TotalSeats",
+                        "CategorySalesChannel",
+                        "PriceDescEX",
+                        "DynamicPrice"
+                      ],
+                      "properties": {
+                        "VenueCode": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/VenueCode",
+                          "type": "string",
+                          "title": "The Venuecode Schema",
+                          "default": "",
+                          "examples": [
+                            "JNSD"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "SessionID": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/SessionID",
+                          "type": "string",
+                          "title": "The Sessionid Schema",
+                          "default": "",
+                          "examples": [
+                            "10116"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "EventCode": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/EventCode",
+                          "type": "string",
+                          "title": "The Eventcode Schema",
+                          "default": "",
+                          "examples": [
+                            "ET00083081"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "ShowDateDisplay": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/ShowDateDisplay",
+                          "type": "string",
+                          "title": "The Showdatedisplay Schema",
+                          "default": "",
+                          "examples": [
+                            "Sunday, 18 Nov"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "ShowTime": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/ShowTime",
+                          "type": "string",
+                          "title": "The Showtime Schema",
+                          "default": "",
+                          "examples": [
+                            "03:00 PM"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "cutOffTime": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/cutOffTime",
+                          "type": "integer",
+                          "title": "The Cutofftime Schema",
+                          "default": 0,
+                          "examples": [
+                            201811181400
+                          ]
+                        },
+                        "VenueName": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/VenueName",
+                          "type": "string",
+                          "title": "The Venuename Schema",
+                          "default": "",
+                          "examples": [
+                            "Jawaharlal Nehru Stadium: Delhi"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "CinemaIsSVG": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/CinemaIsSVG",
+                          "type": "string",
+                          "title": "The Cinemaissvg Schema",
+                          "default": "",
+                          "examples": [
+                            "NONSVG"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "IsSVG": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/IsSVG",
+                          "type": "string",
+                          "title": "The Issvg Schema",
+                          "default": "",
+                          "examples": [
+                            "N"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "location": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/location",
+                          "type": "string",
+                          "title": "The Location Schema",
+                          "default": "",
+                          "examples": [
+                            "National Capital Region (NCR)"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "dtmTime": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/dtmTime",
+                          "type": "string",
+                          "title": "The Dtmtime Schema",
+                          "default": "",
+                          "examples": [
+                            "18-11-2018 15:00:00"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "VenueMax": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/VenueMax",
+                          "type": "string",
+                          "title": "The Venuemax Schema",
+                          "default": "",
+                          "examples": [
+                            "10"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "VenueAddress": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/VenueAddress",
+                          "type": "string",
+                          "title": "The Venueaddress Schema",
+                          "default": "",
+                          "examples": [
+                            "Gate No. 2, Open Arena, Near Lodi Colony, Pragati Vihar, Bhishma Pitamah Marg, Delhi, NCR 110003, India"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "PriceCode": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/PriceCode",
+                          "type": "string",
+                          "title": "The Pricecode Schema",
+                          "default": "",
+                          "examples": [
+                            "T470"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "PriceDesc": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/PriceDesc",
+                          "type": "string",
+                          "title": "The Pricedesc Schema",
+                          "default": "",
+                          "examples": [
+                            "Early Bird VIP"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "Price": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/Price",
+                          "type": "string",
+                          "title": "The Price Schema",
+                          "default": "",
+                          "examples": [
+                            "2500.00"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "SeatsAvail": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/SeatsAvail",
+                          "type": "string",
+                          "title": "The Seatsavail Schema",
+                          "default": "",
+                          "examples": [
+                            "N"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "MaxTickets": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/MaxTickets",
+                          "type": "integer",
+                          "title": "The Maxtickets Schema",
+                          "default": 0,
+                          "examples": [
+                            0
+                          ]
+                        },
+                        "SpecialCode": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/SpecialCode",
+                          "type": "string",
+                          "title": "The Specialcode Schema",
+                          "default": "",
+                          "examples": [
+                            ""
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "AreaCatCode": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/AreaCatCode",
+                          "type": "string",
+                          "title": "The Areacatcode Schema",
+                          "default": "",
+                          "examples": [
+                            "AC00000369"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "SeatLayout": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/SeatLayout",
+                          "type": "string",
+                          "title": "The Seatlayout Schema",
+                          "default": "",
+                          "examples": [
+                            "N"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "AdditionalPrice": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/AdditionalPrice",
+                          "type": "string",
+                          "title": "The Additionalprice Schema",
+                          "default": "",
+                          "examples": [
+                            "Rs. 2500.00"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "AvailableSeats": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/AvailableSeats",
+                          "type": "string",
+                          "title": "The Availableseats Schema",
+                          "default": "",
+                          "examples": [
+                            "0"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "TotalSeats": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/TotalSeats",
+                          "type": "string",
+                          "title": "The Totalseats Schema",
+                          "default": "",
+                          "examples": [
+                            "159"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "CategorySalesChannel": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/CategorySalesChannel",
+                          "type": "string",
+                          "title": "The Categorysaleschannel Schema",
+                          "default": "",
+                          "examples": [
+                            "|M5|MOBILE|OUTLET|POS|TP|WEB|"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "PriceDescEX": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/PriceDescEX",
+                          "type": "string",
+                          "title": "The Pricedescex Schema",
+                          "default": "",
+                          "examples": [
+                            ""
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "DynamicPrice": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T470/properties/DynamicPrice",
+                          "type": "boolean",
+                          "title": "The Dynamicprice Schema",
+                          "default": false,
+                          "examples": [
+                            false
+                          ]
+                        }
+                      }
+                    },
+                    "ET00083081-10116-T471": {
+                      "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471",
+                      "type": "object",
+                      "title": "The Et00083081-10116-t471 Schema",
+                      "required": [
+                        "VenueCode",
+                        "SessionID",
+                        "EventCode",
+                        "ShowDateDisplay",
+                        "ShowTime",
+                        "cutOffTime",
+                        "VenueName",
+                        "CinemaIsSVG",
+                        "IsSVG",
+                        "location",
+                        "dtmTime",
+                        "VenueMax",
+                        "VenueAddress",
+                        "PriceCode",
+                        "PriceDesc",
+                        "Price",
+                        "SeatsAvail",
+                        "MaxTickets",
+                        "SpecialCode",
+                        "AreaCatCode",
+                        "SeatLayout",
+                        "AdditionalPrice",
+                        "AvailableSeats",
+                        "TotalSeats",
+                        "CategorySalesChannel",
+                        "PriceDescEX",
+                        "DynamicPrice"
+                      ],
+                      "properties": {
+                        "VenueCode": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/VenueCode",
+                          "type": "string",
+                          "title": "The Venuecode Schema",
+                          "default": "",
+                          "examples": [
+                            "JNSD"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "SessionID": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/SessionID",
+                          "type": "string",
+                          "title": "The Sessionid Schema",
+                          "default": "",
+                          "examples": [
+                            "10116"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "EventCode": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/EventCode",
+                          "type": "string",
+                          "title": "The Eventcode Schema",
+                          "default": "",
+                          "examples": [
+                            "ET00083081"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "ShowDateDisplay": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/ShowDateDisplay",
+                          "type": "string",
+                          "title": "The Showdatedisplay Schema",
+                          "default": "",
+                          "examples": [
+                            "Sunday, 18 Nov"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "ShowTime": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/ShowTime",
+                          "type": "string",
+                          "title": "The Showtime Schema",
+                          "default": "",
+                          "examples": [
+                            "03:00 PM"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "cutOffTime": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/cutOffTime",
+                          "type": "integer",
+                          "title": "The Cutofftime Schema",
+                          "default": 0,
+                          "examples": [
+                            201811181400
+                          ]
+                        },
+                        "VenueName": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/VenueName",
+                          "type": "string",
+                          "title": "The Venuename Schema",
+                          "default": "",
+                          "examples": [
+                            "Jawaharlal Nehru Stadium: Delhi"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "CinemaIsSVG": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/CinemaIsSVG",
+                          "type": "string",
+                          "title": "The Cinemaissvg Schema",
+                          "default": "",
+                          "examples": [
+                            "NONSVG"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "IsSVG": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/IsSVG",
+                          "type": "string",
+                          "title": "The Issvg Schema",
+                          "default": "",
+                          "examples": [
+                            "N"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "location": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/location",
+                          "type": "string",
+                          "title": "The Location Schema",
+                          "default": "",
+                          "examples": [
+                            "National Capital Region (NCR)"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "dtmTime": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/dtmTime",
+                          "type": "string",
+                          "title": "The Dtmtime Schema",
+                          "default": "",
+                          "examples": [
+                            "18-11-2018 15:00:00"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "VenueMax": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/VenueMax",
+                          "type": "string",
+                          "title": "The Venuemax Schema",
+                          "default": "",
+                          "examples": [
+                            "10"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "VenueAddress": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/VenueAddress",
+                          "type": "string",
+                          "title": "The Venueaddress Schema",
+                          "default": "",
+                          "examples": [
+                            "Gate No. 2, Open Arena, Near Lodi Colony, Pragati Vihar, Bhishma Pitamah Marg, Delhi, NCR 110003, India"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "PriceCode": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/PriceCode",
+                          "type": "string",
+                          "title": "The Pricecode Schema",
+                          "default": "",
+                          "examples": [
+                            "T471"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "PriceDesc": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/PriceDesc",
+                          "type": "string",
+                          "title": "The Pricedesc Schema",
+                          "default": "",
+                          "examples": [
+                            "Phase 1 GA"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "Price": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/Price",
+                          "type": "string",
+                          "title": "The Price Schema",
+                          "default": "",
+                          "examples": [
+                            "2000.00"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "SeatsAvail": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/SeatsAvail",
+                          "type": "string",
+                          "title": "The Seatsavail Schema",
+                          "default": "",
+                          "examples": [
+                            "Y"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "MaxTickets": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/MaxTickets",
+                          "type": "integer",
+                          "title": "The Maxtickets Schema",
+                          "default": 0,
+                          "examples": [
+                            10
+                          ]
+                        },
+                        "SpecialCode": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/SpecialCode",
+                          "type": "string",
+                          "title": "The Specialcode Schema",
+                          "default": "",
+                          "examples": [
+                            ""
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "AreaCatCode": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/AreaCatCode",
+                          "type": "string",
+                          "title": "The Areacatcode Schema",
+                          "default": "",
+                          "examples": [
+                            "AC00000370"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "SeatLayout": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/SeatLayout",
+                          "type": "string",
+                          "title": "The Seatlayout Schema",
+                          "default": "",
+                          "examples": [
+                            "N"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "AdditionalPrice": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/AdditionalPrice",
+                          "type": "string",
+                          "title": "The Additionalprice Schema",
+                          "default": "",
+                          "examples": [
+                            "Rs. 2000.00"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "AvailableSeats": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/AvailableSeats",
+                          "type": "string",
+                          "title": "The Availableseats Schema",
+                          "default": "",
+                          "examples": [
+                            "1261"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "TotalSeats": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/TotalSeats",
+                          "type": "string",
+                          "title": "The Totalseats Schema",
+                          "default": "",
+                          "examples": [
+                            "1500"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "CategorySalesChannel": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/CategorySalesChannel",
+                          "type": "string",
+                          "title": "The Categorysaleschannel Schema",
+                          "default": "",
+                          "examples": [
+                            "|M5|MOBILE|OUTLET|POS|TP|WEB|"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "PriceDescEX": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/PriceDescEX",
+                          "type": "string",
+                          "title": "The Pricedescex Schema",
+                          "default": "",
+                          "examples": [
+                            ""
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "DynamicPrice": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T471/properties/DynamicPrice",
+                          "type": "boolean",
+                          "title": "The Dynamicprice Schema",
+                          "default": false,
+                          "examples": [
+                            false
+                          ]
+                        }
+                      }
+                    },
+                    "ET00083081-10116-T469": {
+                      "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469",
+                      "type": "object",
+                      "title": "The Et00083081-10116-t469 Schema",
+                      "required": [
+                        "VenueCode",
+                        "SessionID",
+                        "EventCode",
+                        "ShowDateDisplay",
+                        "ShowTime",
+                        "cutOffTime",
+                        "VenueName",
+                        "CinemaIsSVG",
+                        "IsSVG",
+                        "location",
+                        "dtmTime",
+                        "VenueMax",
+                        "VenueAddress",
+                        "PriceCode",
+                        "PriceDesc",
+                        "Price",
+                        "SeatsAvail",
+                        "MaxTickets",
+                        "SpecialCode",
+                        "AreaCatCode",
+                        "SeatLayout",
+                        "AdditionalPrice",
+                        "AvailableSeats",
+                        "TotalSeats",
+                        "CategorySalesChannel",
+                        "PriceDescEX",
+                        "DynamicPrice"
+                      ],
+                      "properties": {
+                        "VenueCode": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/VenueCode",
+                          "type": "string",
+                          "title": "The Venuecode Schema",
+                          "default": "",
+                          "examples": [
+                            "JNSD"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "SessionID": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/SessionID",
+                          "type": "string",
+                          "title": "The Sessionid Schema",
+                          "default": "",
+                          "examples": [
+                            "10116"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "EventCode": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/EventCode",
+                          "type": "string",
+                          "title": "The Eventcode Schema",
+                          "default": "",
+                          "examples": [
+                            "ET00083081"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "ShowDateDisplay": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/ShowDateDisplay",
+                          "type": "string",
+                          "title": "The Showdatedisplay Schema",
+                          "default": "",
+                          "examples": [
+                            "Sunday, 18 Nov"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "ShowTime": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/ShowTime",
+                          "type": "string",
+                          "title": "The Showtime Schema",
+                          "default": "",
+                          "examples": [
+                            "03:00 PM"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "cutOffTime": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/cutOffTime",
+                          "type": "integer",
+                          "title": "The Cutofftime Schema",
+                          "default": 0,
+                          "examples": [
+                            201811181400
+                          ]
+                        },
+                        "VenueName": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/VenueName",
+                          "type": "string",
+                          "title": "The Venuename Schema",
+                          "default": "",
+                          "examples": [
+                            "Jawaharlal Nehru Stadium: Delhi"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "CinemaIsSVG": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/CinemaIsSVG",
+                          "type": "string",
+                          "title": "The Cinemaissvg Schema",
+                          "default": "",
+                          "examples": [
+                            "NONSVG"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "IsSVG": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/IsSVG",
+                          "type": "string",
+                          "title": "The Issvg Schema",
+                          "default": "",
+                          "examples": [
+                            "N"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "location": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/location",
+                          "type": "string",
+                          "title": "The Location Schema",
+                          "default": "",
+                          "examples": [
+                            "National Capital Region (NCR)"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "dtmTime": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/dtmTime",
+                          "type": "string",
+                          "title": "The Dtmtime Schema",
+                          "default": "",
+                          "examples": [
+                            "18-11-2018 15:00:00"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "VenueMax": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/VenueMax",
+                          "type": "string",
+                          "title": "The Venuemax Schema",
+                          "default": "",
+                          "examples": [
+                            "10"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "VenueAddress": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/VenueAddress",
+                          "type": "string",
+                          "title": "The Venueaddress Schema",
+                          "default": "",
+                          "examples": [
+                            "Gate No. 2, Open Arena, Near Lodi Colony, Pragati Vihar, Bhishma Pitamah Marg, Delhi, NCR 110003, India"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "PriceCode": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/PriceCode",
+                          "type": "string",
+                          "title": "The Pricecode Schema",
+                          "default": "",
+                          "examples": [
+                            "T469"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "PriceDesc": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/PriceDesc",
+                          "type": "string",
+                          "title": "The Pricedesc Schema",
+                          "default": "",
+                          "examples": [
+                            "Early Bird GA"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "Price": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/Price",
+                          "type": "string",
+                          "title": "The Price Schema",
+                          "default": "",
+                          "examples": [
+                            "1500.00"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "SeatsAvail": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/SeatsAvail",
+                          "type": "string",
+                          "title": "The Seatsavail Schema",
+                          "default": "",
+                          "examples": [
+                            "N"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "MaxTickets": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/MaxTickets",
+                          "type": "integer",
+                          "title": "The Maxtickets Schema",
+                          "default": 0,
+                          "examples": [
+                            0
+                          ]
+                        },
+                        "SpecialCode": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/SpecialCode",
+                          "type": "string",
+                          "title": "The Specialcode Schema",
+                          "default": "",
+                          "examples": [
+                            ""
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "AreaCatCode": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/AreaCatCode",
+                          "type": "string",
+                          "title": "The Areacatcode Schema",
+                          "default": "",
+                          "examples": [
+                            "AC00000368"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "SeatLayout": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/SeatLayout",
+                          "type": "string",
+                          "title": "The Seatlayout Schema",
+                          "default": "",
+                          "examples": [
+                            "N"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "AdditionalPrice": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/AdditionalPrice",
+                          "type": "string",
+                          "title": "The Additionalprice Schema",
+                          "default": "",
+                          "examples": [
+                            "Rs. 1500.00"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "AvailableSeats": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/AvailableSeats",
+                          "type": "string",
+                          "title": "The Availableseats Schema",
+                          "default": "",
+                          "examples": [
+                            "0"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "TotalSeats": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/TotalSeats",
+                          "type": "string",
+                          "title": "The Totalseats Schema",
+                          "default": "",
+                          "examples": [
+                            "367"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "CategorySalesChannel": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/CategorySalesChannel",
+                          "type": "string",
+                          "title": "The Categorysaleschannel Schema",
+                          "default": "",
+                          "examples": [
+                            "|M5|MOBILE|OUTLET|POS|TP|WEB|"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "PriceDescEX": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/PriceDescEX",
+                          "type": "string",
+                          "title": "The Pricedescex Schema",
+                          "default": "",
+                          "examples": [
+                            ""
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "DynamicPrice": {
+                          "$id": "#/properties/eventCards/properties/JNSD/properties/20181118/properties/1500/properties/ET00083081-10116-T469/properties/DynamicPrice",
+                          "type": "boolean",
+                          "title": "The Dynamicprice Schema",
+                          "default": false,
+                          "examples": [
+                            false
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "venueInfo": {
+      "$id": "#/properties/venueInfo",
+      "type": "object",
+      "title": "The Venueinfo Schema",
+      "required": [
+        "National Capital Region (NCR)"
+      ],
+      "properties": {
+        "National Capital Region (NCR)": {
+          "$id": "#/properties/venueInfo/properties/National Capital Region (NCR)",
+          "type": "object",
+          "title": "The National capital region (ncr) Schema",
+          "required": [
+            "JNSD"
+          ],
+          "properties": {
+            "JNSD": {
+              "$id": "#/properties/venueInfo/properties/National Capital Region (NCR)/properties/JNSD",
+              "type": "object",
+              "title": "The Jnsd Schema",
+              "required": [
+                "VenueCode",
+                "VenueName",
+                "CinemaIsSVG",
+                "location",
+                "VenueMax",
+                "Latitude",
+                "Longitude",
+                "VenueType",
+                "DisplayGroupCode",
+                "IsFullLayout",
+                "CouponIsAllowed",
+                "VenueAddress"
+              ],
+              "properties": {
+                "VenueCode": {
+                  "$id": "#/properties/venueInfo/properties/National Capital Region (NCR)/properties/JNSD/properties/VenueCode",
+                  "type": "string",
+                  "title": "The Venuecode Schema",
+                  "default": "",
+                  "examples": [
+                    "JNSD"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "VenueName": {
+                  "$id": "#/properties/venueInfo/properties/National Capital Region (NCR)/properties/JNSD/properties/VenueName",
+                  "type": "string",
+                  "title": "The Venuename Schema",
+                  "default": "",
+                  "examples": [
+                    "Jawaharlal Nehru Stadium: Delhi"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "CinemaIsSVG": {
+                  "$id": "#/properties/venueInfo/properties/National Capital Region (NCR)/properties/JNSD/properties/CinemaIsSVG",
+                  "type": "string",
+                  "title": "The Cinemaissvg Schema",
+                  "default": "",
+                  "examples": [
+                    "NONSVG"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "location": {
+                  "$id": "#/properties/venueInfo/properties/National Capital Region (NCR)/properties/JNSD/properties/location",
+                  "type": "string",
+                  "title": "The Location Schema",
+                  "default": "",
+                  "examples": [
+                    "National Capital Region (NCR)"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "VenueMax": {
+                  "$id": "#/properties/venueInfo/properties/National Capital Region (NCR)/properties/JNSD/properties/VenueMax",
+                  "type": "string",
+                  "title": "The Venuemax Schema",
+                  "default": "",
+                  "examples": [
+                    "10"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "Latitude": {
+                  "$id": "#/properties/venueInfo/properties/National Capital Region (NCR)/properties/JNSD/properties/Latitude",
+                  "type": "string",
+                  "title": "The Latitude Schema",
+                  "default": "",
+                  "examples": [
+                    "28.582628"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "Longitude": {
+                  "$id": "#/properties/venueInfo/properties/National Capital Region (NCR)/properties/JNSD/properties/Longitude",
+                  "type": "string",
+                  "title": "The Longitude Schema",
+                  "default": "",
+                  "examples": [
+                    "77.234117"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "VenueType": {
+                  "$id": "#/properties/venueInfo/properties/National Capital Region (NCR)/properties/JNSD/properties/VenueType",
+                  "type": "string",
+                  "title": "The Venuetype Schema",
+                  "default": "",
+                  "examples": [
+                    "BT"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "DisplayGroupCode": {
+                  "$id": "#/properties/venueInfo/properties/National Capital Region (NCR)/properties/JNSD/properties/DisplayGroupCode",
+                  "type": "string",
+                  "title": "The Displaygroupcode Schema",
+                  "default": "",
+                  "examples": [
+                    "JNSD"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "IsFullLayout": {
+                  "$id": "#/properties/venueInfo/properties/National Capital Region (NCR)/properties/JNSD/properties/IsFullLayout",
+                  "type": "string",
+                  "title": "The Isfulllayout Schema",
+                  "default": "",
+                  "examples": [
+                    "Y"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "CouponIsAllowed": {
+                  "$id": "#/properties/venueInfo/properties/National Capital Region (NCR)/properties/JNSD/properties/CouponIsAllowed",
+                  "type": "string",
+                  "title": "The Couponisallowed Schema",
+                  "default": "",
+                  "examples": [
+                    "Y"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "VenueAddress": {
+                  "$id": "#/properties/venueInfo/properties/National Capital Region (NCR)/properties/JNSD/properties/VenueAddress",
+                  "type": "string",
+                  "title": "The Venueaddress Schema",
+                  "default": "",
+                  "examples": [
+                    "Gate No. 2, Open Arena, Near Lodi Colony, Pragati Vihar, Bhishma Pitamah Marg, Delhi, NCR 110003, India"
+                  ],
+                  "pattern": "^(.*)$"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "seoInfo": {
+      "$id": "#/properties/seoInfo",
+      "type": "object",
+      "title": "The Seoinfo Schema",
+      "required": [
+        "canonicalURL",
+        "description",
+        "keywords",
+        "mainEventType",
+        "place",
+        "redirects",
+        "slug",
+        "title",
+        "schema"
+      ],
+      "properties": {
+        "canonicalURL": {
+          "$id": "#/properties/seoInfo/properties/canonicalURL",
+          "type": "string",
+          "title": "The Canonicalurl Schema",
+          "default": "",
+          "examples": [
+            "https://in.bookmyshow.com/events/life-in-color-india/ET00083081"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "description": {
+          "$id": "#/properties/seoInfo/properties/description",
+          "type": "string",
+          "title": "The Description Schema",
+          "default": "",
+          "examples": [
+            "Book online tickets for Life In Color India in NCR on BookMyShow which is a  event."
+          ],
+          "pattern": "^(.*)$"
+        },
+        "keywords": {
+          "$id": "#/properties/seoInfo/properties/keywords",
+          "type": "string",
+          "title": "The Keywords Schema",
+          "default": "",
+          "examples": [
+            "Life In Color India tickets,tickets"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "mainEventType": {
+          "$id": "#/properties/seoInfo/properties/mainEventType",
+          "type": "string",
+          "title": "The Maineventtype Schema",
+          "default": "",
+          "examples": [
+            "Event"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "place": {
+          "$id": "#/properties/seoInfo/properties/place",
+          "type": "string",
+          "title": "The Place Schema",
+          "default": "",
+          "examples": [
+            "Event Venue"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "redirects": {
+          "$id": "#/properties/seoInfo/properties/redirects",
+          "type": "array",
+          "title": "The Redirects Schema",
+          "items": {
+            "$id": "#/properties/seoInfo/properties/redirects/items",
+            "type": "string",
+            "title": "The Items Schema",
+            "default": "",
+            "examples": [
+              ""
+            ],
+            "pattern": "^(.*)$"
+          }
+        },
+        "slug": {
+          "$id": "#/properties/seoInfo/properties/slug",
+          "type": "string",
+          "title": "The Slug Schema",
+          "default": "",
+          "examples": [
+            "life-in-color-india"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "title": {
+          "$id": "#/properties/seoInfo/properties/title",
+          "type": "string",
+          "title": "The Title Schema",
+          "default": "",
+          "examples": [
+            "Life In Color India  event tickets NCR - BookMyShow"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "schema": {
+          "$id": "#/properties/seoInfo/properties/schema",
+          "type": "string",
+          "title": "The Schema Schema",
+          "default": "",
+          "examples": [
+            "{\"@context\":\"http://schema.org\",\"@type\":\"Event\",\"name\":\"Life In Color India  event tickets NCR - BookMyShow\",\"url\":\"https://in.bookmyshow.com/events/life-in-color-india/ET00083081\",\"description\":\"Book online tickets for Life In Color India in NCR on BookMyShow which is a  event.\",\"startDate\":\"2018-11-18T00:00:00.000Z\",\"endDate\":\"2018-11-18T00:00:00.000Z\",\"location\":{\"@type\":\"EventVenue\",\"address\":\"Big Tree Entertainment Private Limited Ground Floor, Wajeda House, Gulmohar Cross Road No. 7, Juhu Scheme, Mumbai, Maharashtra - 400049\",\"telephone\":\"+9102261445050\"},\"performers\":[],\"offers\":[]}"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
+    "artistsInfo": {
+      "$id": "#/properties/artistsInfo",
+      "type": "object",
+      "title": "The Artistsinfo Schema",
+      "required": [
+        "Artist(s)"
+      ],
+      "properties": {
+        "Artist(s)": {
+          "$id": "#/properties/artistsInfo/properties/Artist(s)",
+          "type": "array",
+          "title": "The Artist(s) Schema",
+          "items": {
+            "$id": "#/properties/artistsInfo/properties/Artist(s)/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "CastCode",
+              "CastName"
+            ],
+            "properties": {
+              "CastCode": {
+                "$id": "#/properties/artistsInfo/properties/Artist(s)/items/properties/CastCode",
+                "type": "string",
+                "title": "The Castcode Schema",
+                "default": "",
+                "examples": [
+                  "1095628"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "CastName": {
+                "$id": "#/properties/artistsInfo/properties/Artist(s)/items/properties/CastName",
+                "type": "string",
+                "title": "The Castname Schema",
+                "default": "",
+                "examples": [
+                  "Diplo"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        }
+      }
+    },
+    "promotion": {
+      "$id": "#/properties/promotion",
+      "type": "object",
+      "title": "The Promotion Schema"
+    },
+    "payment": {
+      "$id": "#/properties/payment",
+      "type": "object",
+      "title": "The Payment Schema",
+      "required": [
+        "bookingFee",
+        "bookingFeeType",
+        "flags",
+        "handler",
+        "pgCharges",
+        "pgChargesType",
+        "sac"
+      ],
+      "properties": {
+        "bookingFee": {
+          "$id": "#/properties/payment/properties/bookingFee",
+          "type": "string",
+          "title": "The Bookingfee Schema",
+          "default": "",
+          "examples": [
+            "40"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "bookingFeeType": {
+          "$id": "#/properties/payment/properties/bookingFeeType",
+          "type": "string",
+          "title": "The Bookingfeetype Schema",
+          "default": "",
+          "examples": [
+            "F"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "flags": {
+          "$id": "#/properties/payment/properties/flags",
+          "type": "object",
+          "title": "The Flags Schema",
+          "required": [
+            "singleTransaction"
+          ],
+          "properties": {
+            "singleTransaction": {
+              "$id": "#/properties/payment/properties/flags/properties/singleTransaction",
+              "type": "boolean",
+              "title": "The Singletransaction Schema",
+              "default": false,
+              "examples": [
+                false
+              ]
+            }
+          }
+        },
+        "handler": {
+          "$id": "#/properties/payment/properties/handler",
+          "type": "string",
+          "title": "The Handler Schema",
+          "default": "",
+          "examples": [
+            "native"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "pgCharges": {
+          "$id": "#/properties/payment/properties/pgCharges",
+          "type": "string",
+          "title": "The Pgcharges Schema",
+          "default": "",
+          "examples": [
+            "0"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "pgChargesType": {
+          "$id": "#/properties/payment/properties/pgChargesType",
+          "type": "string",
+          "title": "The Pgchargestype Schema",
+          "default": "",
+          "examples": [
+            "F"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "sac": {
+          "$id": "#/properties/payment/properties/sac",
+          "type": "string",
+          "title": "The Sac Schema",
+          "default": "",
+          "examples": [
+            "SAC004"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
+    "seating": {
+      "$id": "#/properties/seating",
+      "type": "object",
+      "title": "The Seating Schema"
+    },
+    "social": {
+      "$id": "#/properties/social",
+      "type": "object",
+      "title": "The Social Schema"
+    },
+    "flags": {
+      "$id": "#/properties/flags",
+      "type": "object",
+      "title": "The Flags Schema",
+      "required": [
+        "hasCorporateBooking",
+        "isComingSoon",
+        "isGlobal",
+        "isV3DesktopEnabled",
+        "isV3Enabled",
+        "isWebviewEnabled",
+        "status",
+        "hasPresales",
+        "hasPresalesRegistration",
+        "hasPresalesOnHold",
+        "hasPresalesPassed",
+        "hasOptionalForm",
+        "isRSVP",
+        "hasEventStartDatePassed",
+        "isRegistration",
+        "isMultipleForm",
+        "hasGallery",
+        "isSoldOut",
+        "areSessionsClosed",
+        "hasSeatLayoutInTickets"
+      ],
+      "properties": {
+        "hasCorporateBooking": {
+          "$id": "#/properties/flags/properties/hasCorporateBooking",
+          "type": "boolean",
+          "title": "The Hascorporatebooking Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "isComingSoon": {
+          "$id": "#/properties/flags/properties/isComingSoon",
+          "type": "boolean",
+          "title": "The Iscomingsoon Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "isGlobal": {
+          "$id": "#/properties/flags/properties/isGlobal",
+          "type": "boolean",
+          "title": "The Isglobal Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "isV3DesktopEnabled": {
+          "$id": "#/properties/flags/properties/isV3DesktopEnabled",
+          "type": "boolean",
+          "title": "The Isv3desktopenabled Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "isV3Enabled": {
+          "$id": "#/properties/flags/properties/isV3Enabled",
+          "type": "boolean",
+          "title": "The Isv3enabled Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "isWebviewEnabled": {
+          "$id": "#/properties/flags/properties/isWebviewEnabled",
+          "type": "boolean",
+          "title": "The Iswebviewenabled Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "status": {
+          "$id": "#/properties/flags/properties/status",
+          "type": "boolean",
+          "title": "The Status Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "hasPresales": {
+          "$id": "#/properties/flags/properties/hasPresales",
+          "type": "boolean",
+          "title": "The Haspresales Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "hasPresalesRegistration": {
+          "$id": "#/properties/flags/properties/hasPresalesRegistration",
+          "type": "boolean",
+          "title": "The Haspresalesregistration Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "hasPresalesOnHold": {
+          "$id": "#/properties/flags/properties/hasPresalesOnHold",
+          "type": "boolean",
+          "title": "The Haspresalesonhold Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "hasPresalesPassed": {
+          "$id": "#/properties/flags/properties/hasPresalesPassed",
+          "type": "boolean",
+          "title": "The Haspresalespassed Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "hasOptionalForm": {
+          "$id": "#/properties/flags/properties/hasOptionalForm",
+          "type": "boolean",
+          "title": "The Hasoptionalform Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "isRSVP": {
+          "$id": "#/properties/flags/properties/isRSVP",
+          "type": "boolean",
+          "title": "The Isrsvp Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "hasEventStartDatePassed": {
+          "$id": "#/properties/flags/properties/hasEventStartDatePassed",
+          "type": "boolean",
+          "title": "The Haseventstartdatepassed Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "isRegistration": {
+          "$id": "#/properties/flags/properties/isRegistration",
+          "type": "boolean",
+          "title": "The Isregistration Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "isMultipleForm": {
+          "$id": "#/properties/flags/properties/isMultipleForm",
+          "type": "boolean",
+          "title": "The Ismultipleform Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "hasGallery": {
+          "$id": "#/properties/flags/properties/hasGallery",
+          "type": "boolean",
+          "title": "The Hasgallery Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "isSoldOut": {
+          "$id": "#/properties/flags/properties/isSoldOut",
+          "type": "boolean",
+          "title": "The Issoldout Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "areSessionsClosed": {
+          "$id": "#/properties/flags/properties/areSessionsClosed",
+          "type": "boolean",
+          "title": "The Aresessionsclosed Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "hasSeatLayoutInTickets": {
+          "$id": "#/properties/flags/properties/hasSeatLayoutInTickets",
+          "type": "boolean",
+          "title": "The Hasseatlayoutintickets Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        }
+      }
+    },
+    "bmsId": {
+      "$id": "#/properties/bmsId",
+      "type": "string",
+      "title": "The Bmsid Schema",
+      "default": "",
+      "examples": [
+        "1.496760488.1540362387239"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}
+JSONschema.Net is a web application that generates JSON schema from JSON 
